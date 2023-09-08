@@ -1,4 +1,4 @@
-# ángel's solutions for mit's *Structure and Interpretation of Computer Programs*
+# Ángel's solutions for MIT's *Structure and Interpretation of Computer Programs, Second Edition*
 
 I'm reading sicp, and I'm using this repo to post my solutions for as many
 exercises as I end up going through.
