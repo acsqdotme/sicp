@@ -23,11 +23,16 @@
 ;; before it can do anything. basically like a broken for loop but cooler bc
 ;; recursion
 
+(if (= 0 0) 0 (p))
+;; another point to bring up is that the expression above evaluates cause of
+;; if being a special form not requiring eval. test being a procedure is what
+;; blocks eval above.
+
 ;;;; normal-order eval
 ; (test 0 (p))
 ; (if (= 0 0) 0 (p)))
 ; (if #t 0 (p)))
 ; 0
-;; this gets to actually evaluate because the (p) recursion trap needs to eval
-;; even in the if statement cause its special form rules don't require evals
-;; till the predicate decides what to do.
+;; this gets to actually evaluate because the (p) recursion trap doesn't need to
+;; eval to get past the test process wrapper for the if special form to do its
+;; magic (aka not needing any eval until the predicate says what to eval)
