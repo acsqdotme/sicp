@@ -12,7 +12,7 @@ same syntax as Abelson and Sussman.
 
 On arch, I ran:
 
-```bash
+```console
 $ sudo pacman -S racket
 $ raco pkg install sicp
 ```
