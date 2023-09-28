@@ -12,8 +12,8 @@
 
 (define (sos-top-two x y z)
   (cond 
-    ((and (> x y) (> y z)) (sos x y))
-    ((and (> x y) (<= y z)) (sos x z))
+    ((> x y) (sos-top-two y x z))
+    ((> x z) (sos-top-two z y x))
     (else (sos y z))))
 
 "These should all be the same"
